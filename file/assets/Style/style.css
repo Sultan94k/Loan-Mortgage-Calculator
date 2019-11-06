@@ -1,0 +1,78 @@
+body{
+    margin: 30px;
+    background: lightslategray;
+}
+
+/* p::first-letter{
+    font-size: 40pt;
+    color: purple;
+} */
+.p{
+  font-size: 14pt;
+}
+.tag{
+  margin-bottom: 3px;
+  font-size: 18pt;
+}
+.tag1{
+  padding: 8px;
+  font-size: 18pt;
+}
+form{
+  padding: 30px;
+    background-image: url('https://live.staticflickr.com/7592/16888464777_0073470e81_b.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    width: 505px;
+    height: 360px;
+    border: 1px solid black;
+    margin: 0 auto;
+    box-shadow: 4px 4px 16px black;
+}
+table{
+  float: right;
+}
+input{
+    text-align: center;
+    font-size: 18pt;
+    height: 30px;
+    float: right;
+    background: sandybrown;
+    border-radius: 15px;
+    outline: none;
+}
+
+input[name=principal], [name=interest], [name=years] {
+    width: 60px;
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+  }
+  input[name=principal]:focus {
+    width: 160px;
+  }
+
+  input[name=interest]:focus {
+    width: 110px;
+  }
+  input[name=years]:focus {
+    width: 65px;
+  }
+
+input[type=button]{
+    background: rgb(26, 187, 53);
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 4px 4px 12px grey;
+    transition-duration: 1s;
+    color: whitesmoke;
+}
+ input[type=reset]{
+     margin-right: 10px;
+    background: lightsalmon;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: -4px 4px 12px grey;
+    transition-duration: 1s;
+ }

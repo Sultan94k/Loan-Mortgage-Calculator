@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/Style/style.css">
+</head>
+<body>
+<!-- 
+  This is an HTML form that allows the user to enter data and allows
+  JavaScript to display the results it computes back to the user. The
+  form elements are embedded in a table to improve their appearance.
+  The form itself is given the name "loandata", and the fields within
+  the form are given names such as "interest" and "years". These
+  field names are used in the JavaScript code that follows the form.
+  Note that some of the form elements define "onchange" or "onclick"
+  event handlers. These specify strings of JavaScript code to be
+  executed when the user enters data or clicks on a button. 
+-->
+<form name="loandata">
+  <table>
+    <tr><td class="tag" colspan="3" align="center"><b>Enter Loan Information:</b></td></tr>
+    <tr>
+      <td></td>
+      <td class="p">Amount of the loan (any currency):</td>
+      <td><input placeholder="numbers only No , or ." type="number" name="principal" 
+                 onchange="calculate();"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="p">Annual percentage rate of interest:</td>
+      <td><input type="number" name="interest" 
+                 onchange="calculate();"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="p">Repayment period in years:</td>
+      <td><input type="number" name="years" 
+                 onchange="calculate();"></td>
+    </tr>
+    <tr><td colspan="3">
+      <input type="button" value="Calculate" onclick="calculate();">
+      <input type=reset value=Reset>
+    </td></tr>
+    <tr><td class="tag1" colspan="3" align=center>
+      <b>Payment Information:</b>
+    </td></tr>
+    <tr>
+      <td></td>
+      <td class="p">Your monthly payment will be:</td>
+      <td><input type="number" name="payment" size="12" disabled="disabled"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="p">Your total payment will be:</td>
+      <td><input type="number" name="total" size="12" disabled="disabled"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="p">Your total interest payments will be:</td>
+      <td><input type="number" name="totalinterest" size="12" disabled="disabled"></td>
+    </tr>
+  </table>
+</form>
+
+<script src="assets/Js/cal.js"></script>
+</body>
+</html>
